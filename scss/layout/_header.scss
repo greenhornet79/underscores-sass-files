@@ -1,0 +1,35 @@
+.header-wrap {
+	@extend .clearfix;
+	
+}
+
+.site-header {
+	position: relative;
+	@include breakpoint(grande) {
+		margin: 0 auto;
+		max-width: 960px;
+		
+	}
+}
+
+.logo {
+	text-indent: -9999px;
+	display: block;
+	background: url(../images/logo.png) no-repeat;
+	width: 111px;
+	height: 73px;
+	float: left;
+	background-size: 111px 73px;
+
+	@include breakpoint(tall) {
+		background-size: 223px 147px;
+		width: 223px;
+		height: 147px;
+	}
+	@include breakpoint(grande) {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		z-index: 9991;
+	}
+}

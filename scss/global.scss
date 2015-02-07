@@ -1,0 +1,35 @@
+// follows Atomic Web Design principles 
+// http://bradfrostweb.com/blog/post/atomic-web-design/
+
+// Base Styles
+// reset, typography, site-wide styles (atoms), bit files
+
+@import 'base/reset';
+@import 'base/bits';
+@import 'base/base';
+
+
+// Layout Styles
+// major components (organisms), e.g., header, footer
+
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+
+// Modules
+// minor components (molecules), e.g., buttons, widgets, forms
+
+@import 'modules/top-menu';
+@import 'modules/footer-menu';
+@import 'modules/main-menu';
+@import 'modules/sidebar-menu';
+@import 'modules/buttons';
+@import 'modules/slideshow';
+@import 'modules/forms';
+
+// States
+// js-based classes, alternative states, print
+
+@import 'states/print';
